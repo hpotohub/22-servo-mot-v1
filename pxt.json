@@ -1,11 +1,11 @@
 {
-    "name": "22 Servo Mot V1",
+    "name": "22CA REC 1",
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
         "microphone": "*",
         "servo": "*",
+        "radio": "*",
         "pxt-Motor": "github:waveshare/pxt-Motor#7a0795114409e1c3246cec2e7ea2a20aeabb3c41"
     },
     "files": [
@@ -23,5 +23,16 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
 }
